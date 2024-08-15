@@ -5,5 +5,8 @@ function createSquares(n) {
         square.setAttribute("class", "grid-square");
         square.style.cssText = `width: ${500 / n}px; height: ${500 / n}px`;
         grid.appendChild(square);
+        square.addEventListener("mouseover", () => {
+            square.style.backgroundColor = "#f58231";
+        });
     }
 }
