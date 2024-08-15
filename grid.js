@@ -1,7 +1,7 @@
 do {
     var gridSize = prompt("Grid Size (Max: 100)");
 }
-while (isNaN(gridSize) || !Number.isInteger(parseFloat(gridSize)) || gridSize > 100);
+while (isNaN(gridSize) || !Number.isInteger(parseFloat(gridSize)) || gridSize > 100 || gridSize <= 0);
 
 const grid = document.querySelector(".grid-container");
 
