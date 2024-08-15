@@ -19,6 +19,7 @@ body
     gap: 50px;
     height: 90vh;
     background-color: grey;
+    font-family: Roboto, Arial;
 }
 
 .buttons-container
