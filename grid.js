@@ -24,3 +24,5 @@ function resetSquares() {
 }
 
 document.querySelector(".reset").addEventListener("click", resetSquares);
+
+createSquares(gridSize);
