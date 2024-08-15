@@ -18,9 +18,8 @@ function createSquares(n) {
 
 function resetSquares() {
     const squares = document.querySelectorAll(".grid-square");
-    for (const sqr of squares) {
-        sqr.style.backgroundColor = "white";
-    }
+    grid.removeChild(squares);
+    createSquares(gridSize);
 }
 
 function createRainbowSquares() {
