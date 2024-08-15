@@ -17,3 +17,5 @@ function resetSquares() {
         sqr.css.backgroundColor = "white";
     }
 }
+
+document.querySelector(".reset").addEventListener("click", resetSquares);
