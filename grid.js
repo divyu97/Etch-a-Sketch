@@ -14,8 +14,10 @@ function createSquares(n) {
 function resetSquares() {
     const squares = document.querySelectorAll(".grid-square");
     for (const sqr of squares) {
-        sqr.css.backgroundColor = "white";
+        sqr.style.backgroundColor = "white";
     }
 }
 
 document.querySelector(".reset").addEventListener("click", resetSquares);
+
+createSquares(16);
