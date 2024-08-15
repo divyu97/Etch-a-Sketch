@@ -1,3 +1,8 @@
+do {
+    var gridSize = prompt("Grid Size (Max: 100)");
+}
+while (isNaN(gridSize) || !Number.isInteger(parseFloat(gridSize)) || gridSize > 100);
+
 function createSquares(n) {
     for (let i = 0; i < n ** 2; i++) {
         const square = document.createElement("div");
@@ -19,5 +24,3 @@ function resetSquares() {
 }
 
 document.querySelector(".reset").addEventListener("click", resetSquares);
-
-createSquares(16);
