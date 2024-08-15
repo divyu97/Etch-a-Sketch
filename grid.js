@@ -41,5 +41,6 @@ function createRainbowSquares() {
 }
 
 document.querySelector(".reset").addEventListener("click", resetSquares);
+document.querySelector(".rainbow").addEventListener("click", createRainbowSquares);
 
 createSquares(gridSize);
