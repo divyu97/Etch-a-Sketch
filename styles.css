@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
 .grid-container
 {
     display: flex;
@@ -6,6 +8,7 @@
     border-radius: 8px;
     width: 500px;
     height: 500px;
+    background-color: white;
 }
 
 body
@@ -13,5 +16,37 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     height: 90vh;
+    background-color: grey;
+}
+
+.buttons-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.reset
+{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    border: 5px solid black;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.rainbow
+{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 25px;
+    border: 5px solid black;
+    padding: 8px;
+    font-weight: bold;
 }
