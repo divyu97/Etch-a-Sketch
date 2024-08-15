@@ -3,10 +3,11 @@ do {
 }
 while (isNaN(gridSize) || !Number.isInteger(parseFloat(gridSize)) || gridSize > 100);
 
+const grid = document.querySelector(".grid-container");
+
 function createSquares(n) {
     for (let i = 0; i < n ** 2; i++) {
         const square = document.createElement("div");
-        const grid = document.querySelector(".grid-container");
         square.setAttribute("class", "grid-square");
         square.style.cssText = `width: ${500 / n}px; height: ${500 / n}px`;
         grid.appendChild(square);
@@ -18,12 +19,13 @@ function createSquares(n) {
 
 function resetSquares() {
     const squares = document.querySelectorAll(".grid-square");
-    grid.removeChild(squares);
+    for (const sqre of squares) {
+        grid.removeChild(sqre);
+    }
     createSquares(gridSize);
 }
 
 function createRainbowSquares() {
-    const grid = document.querySelector(".grid-container");
     const squares = document.querySelectorAll(".grid-square");
     grid.removeChild(squares);
     for (let i = 0; i < gridSize ** 2; i++) {
